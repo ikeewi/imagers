@@ -1,0 +1,54 @@
+import turtle
+
+# กำหนดขนาดและสี
+turtle.setup(width=600, height=400)
+turtle.bgcolor("white")
+
+# วาดตัวละคร
+turtle.penup()
+turtle.goto(-100, 0)
+turtle.pendown()
+turtle.begin_fill()
+turtle.circle(50)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(-100, 20)
+turtle.pendown()
+turtle.write("ตัวละคร", font=("Arial", 20))
+
+# วาดท่าการออกกำลังกาย
+turtle.penup()
+turtle.goto(-100, -50)
+turtle.pendown()
+turtle.begin_fill()
+turtle.circle(50)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(-100, -70)
+turtle.pendown()
+turtle.write("ท่าการออกกำลังกายสร้างกล้ามเนื้อหัวไหล่", font=("Arial", 20))
+
+# วาดคำอธิบาย
+turtle.penup()
+turtle.goto(-200, 100)
+turtle.pendown()
+turtle.write("ท่านี้ใช้สร้างกล้ามเนื้อหัวไหล่ด้านหน้า", font=("Arial", 20))
+turtle.penup()
+turtle.goto(-200, 70)
+turtle.pendown()
+turtle.write("ยืนตัวตรง เท้าแยกความกว้างเท่าไหล่", font=("Arial", 20))
+turtle.penup()
+turtle.goto(-200, 40)
+turtle.pendown()
+turtle.write("เหยียดแขนทั้งสองข้างไปด้านหน้า", font=("Arial", 20))
+turtle.penup()
+turtle.goto(-200, 10)
+turtle.pendown()
+turtle.write("งอข้อศอกทั้งสองข้างขึ้นด้านบน", font=("Arial", 20))
+turtle.penup()
+turtle.goto(-200, -20)
+turtle.pendown()
+turtle.write("ค้างไว้ 1-2 วินาที แล้วกลับสู่ท่าเริ่มต้น", font=("Arial", 20))
+
+# แสดงผล
+turtle.done()
